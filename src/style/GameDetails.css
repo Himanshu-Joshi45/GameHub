@@ -1,0 +1,96 @@
+/* Add space below the header */
+.game-details-container {
+    margin-top: 50px;
+    padding: 20px;
+  }
+  
+  /* Game Image Styling */
+  .game-details-image {
+    width: 100%;
+    max-width: 450px; /* Limits size on larger screens */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Game Title Styling */
+  .game-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  /* Description Box */
+  .game-description-box {
+    max-width: 900px;
+    margin: 20px auto;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+  
+  /* Platform & Genre Badges */
+  .badge {
+    font-size: 0.9rem;
+    margin-right: 5px;
+    padding: 5px 10px;
+  }
+  
+  /* Screenshots */
+  .screenshot {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* System Requirements Box */
+  .system-requirements {
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 992px) {
+    .game-details-container {
+      text-align: center;
+    }
+  
+    .game-details-image {
+      max-width: 100%;
+      margin-bottom: 20px;
+    }
+  
+    .game-description-box {
+      padding: 15px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .game-title {
+      font-size: 1.8rem;
+    }
+  
+    .game-description-box {
+      font-size: 0.9rem;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .game-title {
+      font-size: 1.5rem;
+    }
+  
+    .game-description-box {
+      font-size: 0.85rem;
+      padding: 10px;
+    }
+  
+    .badge {
+      font-size: 0.8rem;
+    }
+  }
+  

@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap');
+
+/* Global Reset */
+* {
+  box-sizing: border-box;
+}
+
+/* Navbar Styling */
+.custom-navbar {
+  background: linear-gradient(90deg, #1f1c2c, #928dab);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  padding: 10px 20px;
+}
+
+
+.navbar-collapse {
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+
+/* Logo */
+.logo {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #ff4757 !important;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  transition: 0.3s;
+}
+
+.logo:hover {
+  color: #ffd32a !important;
+  transform: scale(1.05);
+}
+
+/* Search Form */
+.search-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.search-group {
+  width: 100%;
+  max-width: 500px;
+}
+
+.search-input {
+  background-color: #343a40;
+  color: white;
+  border: none;
+  height: 40px;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+  padding-left: 15px;
+}
+
+.search-input::placeholder {
+  color: #ccc;
+}
+
+.search-icon-wrapper {
+  background-color: #343a40;
+  color: white;
+  border: none;
+  height: 40px;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Navigation Items */
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.library-link {
+  color: white !important;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  transition: color 0.3s;
+}
+
+.library-link:hover {
+  color: #ffd32a !important;
+}
+
+.login-btn {
+  border-radius: 30px;
+  padding: 5px 20px;
+  transition: 0.3s;
+}
+
+.login-btn:hover {
+  background-color: #ff4757;
+  border-color: #ff4757;
+  color: white;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .navbar-collapse {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .search-form {
+    flex-direction: column;
+    width: 100%;
+    max-width: 100%;
+    margin-top: 10px;
+  }
+
+  .search-input {
+    width: 100%;
+    margin-bottom: 0;
+  }
+
+  .nav-right {
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  .logo {
+    font-size: 1.2rem;
+  }
+}
