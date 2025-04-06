@@ -19,11 +19,13 @@ const Home = ({ searchTerm }) => {
   return (
     <Container fluid className="py-4 home-container">
       <Row>
-        <Col xs={12} md={3} className="sidebar-column mb-4 mb-md-0">
+        {/* Sidebar – only side-by-side on large screens and up (≥992px) */}
+        <Col xs={12} lg={3} className="sidebar-column mb-4 mb-lg-0">
           <SideBar />
         </Col>
 
-        <Col xs={12} md={9}>
+        {/* Main Content */}
+        <Col xs={12} lg={9}>
           <h2 className="mb-4">
             {searchTerm ? `🔍 Results for "${searchTerm}"` : "🎮 Popular Games"}
           </h2>

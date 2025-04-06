@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const BASE_URL = "https://api.rawg.io/api";
-const API_KEY = import.meta.env.VITE_RAWG_API_KEY; // Ensure this is in your .env file
+const API_KEY = import.meta.env.VITE_RAWG_API_KEY;
 
 // Function to fetch games
 export const fetchGames = async (filters = {}) => {

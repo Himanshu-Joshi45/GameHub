@@ -1,34 +1,71 @@
 .sidebar-container {
-    background-color: #1f1c2c;
-    color: white;
-    padding: 20px;
-    border-radius: 10px;
-    min-width: 230px;
+  background-color: #1f1c2c;
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  min-width: 230px;
+  position: relative;
+  overflow: visible;
+  z-index: 2; /* ensures dropdowns stay above other elements */
+}
+
+.sidebar-title {
+  margin-bottom: 20px;
+  font-size: 20px;
+  border-bottom: 2px solid #928dab;
+  padding-bottom: 10px;
+}
+
+.filters-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.filter-group {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-width: 0;
+}
+
+.filter-group label {
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.filter-group select,
+.filter-group input {
+  padding: 8px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+/* Responsive: iPad & Mobile — two filters per row */
+@media screen and (max-width: 1024px) {
+  .filters-wrapper {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 12px;
   }
-  
-  .sidebar-title {
-    margin-bottom: 20px;
-    font-size: 20px;
-    border-bottom: 2px solid #928dab;
-    padding-bottom: 10px;
-  }
-  
+
   .filter-group {
-    margin-bottom: 20px;
-    display: flex;
-    flex-direction: column;
+    flex: 1 1 calc(50% - 12px);
+    min-width: 140px;
   }
-  
-  .filter-group label {
-    font-weight: 500;
-    margin-bottom: 5px;
+}
+
+/* Native iOS/WebKit select fix */
+@supports (-webkit-touch-callout: none) {
+  select {
+    width: 100%;
   }
-  
-  .filter-group select,
-  .filter-group input {
-    padding: 8px;
-    border-radius: 5px;
-    border: none;
-    outline: none;
-  }
-  
+}
+
+/* Optional: Support for react-select dropdowns staying in bounds */
+.Select__menu {
+  z-index: 9999 !important;
+}
