@@ -2,7 +2,7 @@
 
 GameHub is an interactive gaming platform that leverages the RAWG API to provide users with comprehensive information about various games. The application features user authentication, personalized game libraries, and an interactive  interface.
 
-🔗 **Live Demo:** [GameVault on Vercel](https://mediaamp-assignment.vercel.app/)
+🔗 **Live Demo:** [GameHub on Vercel](https://game-hub-ashy-alpha.vercel.app/)
 
 ## ✨ Features
 
@@ -51,7 +51,7 @@ GameHub is an interactive gaming platform that leverages the RAWG API to provide
 
 3. Create a `.env` file in the root directory with the following variables:
    ```
-   VITE_API_RAWG=your_rawg_api_key
+   VITE_API_RAWG_KEY=your_rawg_api_key
    VITE_CLERK_PUBLISHABLE_KEY=your_clerk_publishable_key
    ```
 
